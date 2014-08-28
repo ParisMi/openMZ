@@ -102,7 +102,6 @@ public class MZUtil {
 			}
 			if(cent instanceof EntityZombie) {
 				EntityZombie z  = (EntityZombie)cent;
-				Util.log("replcaed" + z.getAirTicks());
 				MZombie mz = new MZombie(mcWorld);
 				mz.setLocation(z.locX, z.locY, z.locZ, z.pitch, z.yaw);
 				mcWorld.removeEntity(cent);
@@ -252,7 +251,6 @@ public class MZUtil {
 		if(is == null || line == null) {
 			return;
 		}
-		Util.log("running");
 		removeMZTrait(is, traitType);
 		ItemMeta im = is.getItemMeta();
 		List<String> lore = im.getLore()==null?new ArrayList<String>():im.getLore();

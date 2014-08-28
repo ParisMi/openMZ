@@ -198,7 +198,7 @@ public class OpenMZ extends JavaPlugin implements Listener {
 		//save chests
 		try {
 			for(MZChest c : allChests.values()) {
-			//	getDatabase().save(c);
+				getDatabase().save(c);
 			}
 		} catch(Exception e) {
 			e.printStackTrace();

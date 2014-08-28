@@ -116,7 +116,6 @@ public class MZPlayerListener implements Listener {
 				Bukkit.getScheduler().runTaskLater(OpenMZ.get(), new Runnable() { 
 					@Override
 					public void run() { 
-						Util.log("runngg");
 						plr.getInventory().remove(plr.getInventory().getItemInHand());
 					}}, 1	);
 			}

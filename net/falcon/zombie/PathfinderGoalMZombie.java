@@ -52,7 +52,7 @@ public class PathfinderGoalMZombie extends PathfinderGoalNearestAttackableTarget
 				currentTargetF.set(this, null);
 				return false;
 			}
-			//Util.log("Time taken: " + (System.currentTimeMillis() - timeStart));
+			//Util.log("Taaaime taken: " + (System.currentTimeMillis() - timeStart));
 			return true;
 		} } catch(Exception e) { e.printStackTrace();}
 		//Util.log("Time taken: " + (System.currentTimeMillis() - timeStart));

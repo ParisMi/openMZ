@@ -239,7 +239,6 @@ public class MZOptions {
 				try {
 					String path = mzConfig.category() + "." + f.getName();
 					cs.set(path, f.get(null));
-					Util.log("Saved config: " + f.getName());
 				} catch(Exception e) {
 					e.printStackTrace();
 					Util.log("Tried to save config field '" + f.getName() + "' but had a problem...");

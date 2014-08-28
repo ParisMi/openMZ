@@ -60,7 +60,6 @@ public class ItemMenu extends DisplayMenu {
 		}
 		if(arg.equalsIgnoreCase("get")) {
 			String name = Util.concatRestList(args, 1);
-			Util.log(name);
 			for(MZItemTemplate t : OpenMZ.get().customItems) {
 				if(ChatColor.stripColor(t.getName()).equalsIgnoreCase(name)) {
 					p.getInventory().addItem(t.generateItem());

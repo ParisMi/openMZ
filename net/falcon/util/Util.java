@@ -75,7 +75,6 @@ public class Util {
 		for(int i = start; i < ar.length; i++) {
 			result += ar[i] + " ";
 		}
-		Util.log(result);
 		return result.substring(0, result.length() - 1);
 	}
 
@@ -196,7 +195,7 @@ public class Util {
 		int maxRange = 10 + (5 * tier);
 		int maxNodes = tier + 3;
 		int nodeAmt = Double.valueOf((Math.random() * maxNodes)).intValue();
-		Util.log("spawning " + nodeAmt + " nodes of zombies of up to " + maxAmt + " each.");
+		//Util.log("spawning " + nodeAmt + " nodes of zombies of up to " + maxAmt + " each.");
 		for(int i = 0; i < nodeAmt; i++) {
 			int amt = Double.valueOf((Math.random() * maxAmt)).intValue() + 1;
 			int x = l.getBlockX() + Double.valueOf((Math.random() * maxRange)).intValue();
